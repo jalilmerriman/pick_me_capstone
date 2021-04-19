@@ -11,7 +11,7 @@
         android:theme="@style/Theme.PickMe">
         <activity android:name=".createAnAccount"></activity>
         <activity android:name=".customerLogin" />
-        <activity android:name=".mainPage" />
+        <activity android:name=".customerBusinessInfo" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,3 +22,4 @@
     </application>
 
 </manifest>
+

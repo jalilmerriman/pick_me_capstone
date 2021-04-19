@@ -23,7 +23,7 @@ public class createAnAccount extends AppCompatActivity {
         });
     }
     public void mainPage(){
-        Intent intent = new Intent(this, mainPage.class);
+        Intent intent = new Intent(this, customerBusinessInfo.class);
         startActivity(intent);
     }
 }
