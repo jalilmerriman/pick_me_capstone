@@ -6,29 +6,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/logout" />
+        tools:context=".studentUniversityList">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/logout"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:text="List of Businesses"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="271dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logout" />
 
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logout"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="Logout"
+            app:backgroundTint="#AE5A5A" />
+
+    </RelativeLayout>
+
 </LinearLayout>

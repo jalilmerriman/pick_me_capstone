@@ -48,7 +48,7 @@ public class customerBusinessInfo extends AppCompatActivity {
 
     }
     public void businessList(){
-        Intent intent = new Intent(this, customerBusinessList.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
